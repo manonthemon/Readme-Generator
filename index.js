@@ -49,22 +49,47 @@ inquirer
       name: 'description',
     },
     {
-      type: 'checkbox',
-      message: 'Write the table of contents',
-      name: 'contents',
-      choices: ['Installation', 'Usage' , 'License']
-    },
+        type: 'input',
+        message: 'Installation instructions',
+        name: 'installation',
+      },
+      {
+        type: 'input',
+        message: 'Usage instructions',
+        name: 'usage',
+      },
+      {
+        type: 'list',
+        message: 'Type of license',
+        name: 'license',
+        choices: ['Apache license 2.0' , 'GNU General Public License 3.0', 'MIT License', 'BSD 2-clause "Simplified" License', 'BSD 3-clause "New" or "Revised" License', 'Boost Software License 2.0' , 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License 3.0', 'GNU General Public License 2.0', 'GNU Lesser General Public License 2.1' , 'Mozilla Public License 2.0' , 'The Unlicense']
+      },
+      {
+        type: 'input',
+        message: 'Contributors',
+        name: 'contributors',
+      },
   ])
   .then((response) => {
-console.log(response.title)
 
 const readme = `<strong>${response.title}</strong><br>
 
 <strong>Project's description</strong> <br>
 ${response.description}<br>
 
-<strong>Table of contents</strong><br>
- ${response.contents}`;
+<strong>Installation instructions</strong> <br>
+${response.installation}<br>
+
+<strong>Usage instructions</strong> <br>
+${response.usage}<br>
+
+<strong>License type</strong> <br>
+${response.license}<br>
+
+<strong>Contributors</strong> <br>
+${response.contributors}<br>
+
+`
 
 
 fs.writeFile("response.md", readme, (err) => 

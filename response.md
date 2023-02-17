@@ -1,7 +1,17 @@
-<strong>AAA</strong><br>
+<strong>Example project</strong><br>
 
 <strong>Project's description</strong> <br>
-AAA<br>
+This is an example project<br>
 
-<strong>Table of contents</strong><br>
- Installation,Usage,License
+<strong>Installation instructions</strong> <br>
+No installation needed, just run it.<br>
+
+<strong>Usage instructions</strong> <br>
+This is very easy to use<br>
+
+<strong>License type</strong> <br>
+MIT License<br>
+
+<strong>Contributors</strong> <br>
+Maciek Klimowicz<br>
+
