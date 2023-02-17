@@ -49,17 +49,23 @@ inquirer
       name: 'description',
     },
     {
-      type: 'input',
+      type: 'checkbox',
       message: 'Write the table of contents',
       name: 'contents',
+      choices: ['Installation', 'Usage' , 'License']
     },
   ])
   .then((response) => {
 console.log(response.title)
 
-const readme = `Project's title: ${response.title}
-Project's description: ${response.description}
-Contents: ${response.contents}`;
+const readme = `<strong>${response.title}</strong><br>
+
+<strong>Project's description</strong> <br>
+${response.description}<br>
+
+<strong>Table of contents</strong><br>
+ ${response.contents}`;
+
 
 fs.writeFile("response.md", readme, (err) => 
 err? console.error(err) : console.log("Readme created")
