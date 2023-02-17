@@ -10,9 +10,9 @@ const generateMarkdown = require("./utils/generateMarkdown");
 console.log(process.argv);
 
 // Reads another file, in this case the generateMarkdown file
-fs.readFile('./utils/generateMarkdown.js' , 'utf8', (error, data) => 
-error ? console.error(error) : console.log(data)
-);
+// fs.readFile('./utils/generateMarkdown.js' , 'utf8', (error, data) => 
+// error ? console.error(error) : console.log(data)
+// );
 
 //Logs consecutive elements of process argv
 console.log(`The first element in the argument array is ${process.argv[0]}`);
@@ -33,34 +33,38 @@ for (let i =0; i < iterations; i++) {
     console.log(`Hello, ${name}`);
 }
 
-//prints length of process argv to console
-console.log(`The length of the process array is ${process.argv.length}`);
 
 
-//EXAMPLE INQUIRER CODE
-// inquirer
-//   .prompt([
-//     {
-//       type: 'input',
-//       message: 'What is your user name?',
-//       name: 'username',
-//     },
-//     {
-//       type: 'password',
-//       message: 'What is your password?',
-//       name: 'password',
-//     },
-//     {
-//       type: 'password',
-//       message: 'Re-enter password to confirm:',
-//       name: 'confirm',
-//     },
-//   ])
-//   .then((response) =>
-//     response.confirm === response.password
-//       ? console.log('Success!')
-//       : console.log('You forgot your password already?!')
-//   );
+// EXAMPLE INQUIRER CODE
+inquirer
+  .prompt([
+    {
+      type: 'input',
+      message: 'What is your project title',
+      name: 'title',
+    },
+    {
+      type: 'input',
+      message: 'Write your project description',
+      name: 'description',
+    },
+    {
+      type: 'input',
+      message: 'Write the table of contents',
+      name: 'contents',
+    },
+  ])
+  .then((response) => {
+console.log(response.title)
+
+const readme = `Project's title: ${response.title}
+Project's description: ${response.description}
+Contents: ${response.contents}`;
+
+fs.writeFile("response.md", readme, (err) => 
+err? console.error(err) : console.log("Readme created")
+)
+ });
 
 
 
