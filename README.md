@@ -1,9 +1,9 @@
-# This is a project
+# Well
 
-  [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)<br>
+  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)<br>
 
   ## Description 
-  Run it
+  Well well well
 
   ## Table of contents
 1. [Installation](#installation)
@@ -13,18 +13,18 @@
 5. [Questions](#questions)
 
   ## Installation
-Run it now
+you see this?
 
 ## Usage
- Use it
+ This is it~
   
  ## License
  Project covered under the following license: 
- - Creative Commons<br>
+ - Mozilla Public<br>
   
  ## Contributors
- Me
+ Maciej K
   
  ## Questions
-   - Please send your questions to klim@klim.com.
-   - For more information visit https://github.com/lol 
+   - Please send your questions to kli@kli.com.
+   - For more information visit https://github.com/glu 

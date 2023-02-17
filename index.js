@@ -40,13 +40,13 @@ inquirer
       },
       {
         type: 'input',
-        message: 'List contributors:',
+        message: 'Enter contributors:',
         name: 'contributors',
       },
 
       {
         type: 'input',
-        message: 'List tests used:',
+        message: 'Enter tests used:',
         name: 'tests',
       },
 
