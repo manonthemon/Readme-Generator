@@ -58,7 +58,7 @@ inquirer
         type: 'list',
         message: 'Chose the license type',
         name: 'license',
-        choices: ['Apache license 2.0' , 'GNU General Public License 3.0', 'MIT License', 'BSD 2-clause "Simplified" License', 'BSD 3-clause "New" or "Revised" License', 'Boost Software License 2.0' , 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License 3.0', 'GNU General Public License 2.0', 'GNU Lesser General Public License 2.1' , 'Mozilla Public License 2.0' , 'The Unlicense']
+        choices: ['Apache 2.0' , 'MIT', 'Creative Commons', 'Mozilla Public' , 'GLP 3.0']
       },
       {
         type: 'input',
@@ -68,33 +68,48 @@ inquirer
 
       {
         type: 'input',
+        message: 'List tests used',
+        name: 'tests',
+      },
+
+      {
+        type: 'input',
         message: 'Enter email address for project-related questions',
-        name: 'questions',
+        name: 'email',
+      },
+
+      {
+        type: 'input',
+        message: 'Enter your GitHub username',
+        name: 'github',
       },
 
       
   ])
   .then((response) => {
 
-const readme = `<strong>${response.title}</strong><br>
+  const readme = generateMarkdown(response)
 
-<strong>Project's description</strong> <br>
-${response.description}<br>
 
-<strong>Installation instructions</strong> <br>
-${response.installation}<br>
+// const readme = `<strong>${response.title}</strong><br>
 
-<strong>Usage instructions</strong> <br>
-${response.usage}<br>
+// <strong>Project's description</strong> <br>
+// ${response.description}<br>
 
-<strong>License type</strong> <br>
-Project covered under the following license: ${response.license}<br>
+// <strong>Installation instructions</strong> <br>
+// ${response.installation}<br>
 
-<strong>Contributors</strong> <br>
-${response.contributors}<br>
+// <strong>Usage instructions</strong> <br>
+// ${response.usage}<br>
 
-<strong>Questions</strong> <br>
-Please send your questions to ${response.questions}<br>`
+// <strong>License type</strong> <br>
+// Project covered under the following license: ${response.license}<br>
+
+// <strong>Contributors</strong> <br>
+// ${response.contributors}<br>
+
+// <strong>Questions</strong> <br>
+// Please send your questions to ${response.questions}<br>`
 
 fs.writeFile("response.md", readme, (err) => 
 err? console.error(err) : console.log("Readme created")

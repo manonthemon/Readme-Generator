@@ -1,19 +1,30 @@
-<strong>sdfd</strong><br>
+# AAAA
 
-<strong>Project's description</strong> <br>
-sdfsdf<br>
+  ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)<br>
 
-<strong>Installation instructions</strong> <br>
-aaaa<br>
+  ## Description 
+  BBBB
 
-<strong>Usage instructions</strong> <br>
-aaaaaaa<br>
+  ## Table of contents
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [License](#license)
+4. [Contributors](#contributors)
+5. [Questions](#questions)
 
-<strong>License type</strong> <br>
-Project covered under the following license: Apache license 2.0<br>
+  ## Installation
+CCCC
 
-<strong>Contributors</strong> <br>
-aaaaaa<br>
-
-<strong>Questions</strong> <br>
-Please send your questions to klimowicz.maciej@gmail.com<br>
+## Usage
+ DDDD
+  
+ ## License
+ Project covered under the following license: 
+ - MIT<br>
+  
+ ## Contributors
+ LLL
+  
+ ## Questions
+   - Please send your questions to SSSD.
+   - For more information visit https://github.com/SDS 
