@@ -6,8 +6,6 @@ const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// Prints the array of process to console
-console.log(process.argv);
 
 // Reads another file, in this case the generateMarkdown file
 // fs.readFile('./utils/generateMarkdown.js' , 'utf8', (error, data) => 
@@ -15,25 +13,23 @@ console.log(process.argv);
 // );
 
 //Logs consecutive elements of process argv
-console.log(`The first element in the argument array is ${process.argv[0]}`);
-console.log(`The second element in the argument array is ${process.argv[1]}`);
-console.log(`The third element in the argument array is ${process.argv[2]}`);
-console.log(`The fourth element in the argument array is ${process.argv[3]}`);
+// console.log(`The first element in the argument array is ${process.argv[0]}`);
+// console.log(`The second element in the argument array is ${process.argv[1]}`);
+// console.log(`The third element in the argument array is ${process.argv[2]}`);
+// console.log(`The fourth element in the argument array is ${process.argv[3]}`);
 
 
 //Assigns elements of process argv to variables
-const name = process.argv[2]
-const iterations = process.argv[3]
+// const name = process.argv[2]
+// const iterations = process.argv[3]
 
-console.log(`We are going to print ${name} ${iterations} times`);
+// console.log(`We are going to print ${name} ${iterations} times`);
 
 //creates a loop to print 3-rd elements of process a number of times specified in 4-th element of process
 
-for (let i =0; i < iterations; i++) {
-    console.log(`Hello, ${name}`);
-}
-
-
+// for (let i =0; i < iterations; i++) {
+//     console.log(`Hello, ${name}`);
+// }
 
 // EXAMPLE INQUIRER CODE
 inquirer
@@ -50,25 +46,33 @@ inquirer
     },
     {
         type: 'input',
-        message: 'Installation instructions',
+        message: 'Enter installation instructions',
         name: 'installation',
       },
       {
         type: 'input',
-        message: 'Usage instructions',
+        message: 'Enter usage instructions',
         name: 'usage',
       },
       {
         type: 'list',
-        message: 'Type of license',
+        message: 'Chose the license type',
         name: 'license',
         choices: ['Apache license 2.0' , 'GNU General Public License 3.0', 'MIT License', 'BSD 2-clause "Simplified" License', 'BSD 3-clause "New" or "Revised" License', 'Boost Software License 2.0' , 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License 3.0', 'GNU General Public License 2.0', 'GNU Lesser General Public License 2.1' , 'Mozilla Public License 2.0' , 'The Unlicense']
       },
       {
         type: 'input',
-        message: 'Contributors',
+        message: 'List the contributors',
         name: 'contributors',
       },
+
+      {
+        type: 'input',
+        message: 'Enter email address for project-related questions',
+        name: 'questions',
+      },
+
+      
   ])
   .then((response) => {
 
@@ -84,20 +88,18 @@ ${response.installation}<br>
 ${response.usage}<br>
 
 <strong>License type</strong> <br>
-${response.license}<br>
+Project covered under the following license: ${response.license}<br>
 
 <strong>Contributors</strong> <br>
 ${response.contributors}<br>
 
-`
-
+<strong>Questions</strong> <br>
+Please send your questions to ${response.questions}<br>`
 
 fs.writeFile("response.md", readme, (err) => 
 err? console.error(err) : console.log("Readme created")
 )
  });
-
-
 
 
 // array of questions for user

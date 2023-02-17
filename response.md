@@ -1,17 +1,19 @@
-<strong>Example project</strong><br>
+<strong>sdfd</strong><br>
 
 <strong>Project's description</strong> <br>
-This is an example project<br>
+sdfsdf<br>
 
 <strong>Installation instructions</strong> <br>
-No installation needed, just run it.<br>
+aaaa<br>
 
 <strong>Usage instructions</strong> <br>
-This is very easy to use<br>
+aaaaaaa<br>
 
 <strong>License type</strong> <br>
-MIT License<br>
+Project covered under the following license: Apache license 2.0<br>
 
 <strong>Contributors</strong> <br>
-Maciek Klimowicz<br>
+aaaaaa<br>
 
+<strong>Questions</strong> <br>
+Please send your questions to klimowicz.maciej@gmail.com<br>
