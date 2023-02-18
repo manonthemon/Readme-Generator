@@ -65,7 +65,7 @@ inquirer
 
   const readme = generateMarkdown(response)
 
-fs.writeFile("README.md", readme, (err) => 
+fs.writeFile("READMEexample.md", readme, (err) => 
 err? console.error(err) : console.log("Readme created")
 )
  });

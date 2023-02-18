@@ -32,21 +32,15 @@ function generateMarkdown(data) {
   ## Table of contents
 1. [Installation](#installation)
 2. [Usage](#usage)
-3. [Video](#video)
-4. [License](#license)
-5. [Contributing](#contributing)
-6. [Questions](#questions)
+3. [License](#license)
+4. [Contributing](#contributing)
+5. [Questions](#questions)
 
   ## Installation
 ${data.installation}
 
 ## Usage
  ${data.usage}
-
- ## Video
-
- [![Demo video](/ Screenshot URL )]( Video URL)
-
 
  ## License
  Project covered under the following license: 
