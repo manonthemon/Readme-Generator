@@ -11,7 +11,7 @@
 2. [Usage](#usage)
 3. [Video](#video)
 4. [License](#license)
-5. [Contributors](#contributors)
+5. [Contributing](#contributing)
 6. [Questions](#questions)
 
   ## Installation
@@ -28,10 +28,11 @@ This is a simple command line-based application. Requires node.js.
  Project covered under the following license: 
  - MIT<br>
   
- ## Contributors
- This project was developed by:
+ ## Contributing
+ To contribute to this project please contact me using the contact details provided below. This project was developed by:
  - Maciej Klimowicz
+
   
  ## Questions
    - Please send your questions to klimowicz.maciej@gmail.com.
-   - For more information visit https://github.com/manonthemon. 
+   - For more information visit https://github.com/manonthemon.

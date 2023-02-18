@@ -55,6 +55,7 @@ ${data.installation}
  ## Contributing
  This app was developed by:
  - ${data.contributors}
+ To contribute to this project please contact me using the contact details provided below.
   
  ## Questions
    - Please send your questions to ${data.email}.
