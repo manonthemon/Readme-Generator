@@ -34,7 +34,7 @@ function generateMarkdown(data) {
 2. [Usage](#usage)
 3. [Video](#video)
 4. [License](#license)
-5. [Contributors](#contributors)
+5. [Contributing](#contributing)
 6. [Questions](#questions)
 
   ## Installation
@@ -45,17 +45,16 @@ ${data.installation}
 
  ## Video
 
- [![Demo video](/utils/video.jpg)](https://drive.google.com/file/d/1fyYXS_mYDH-uuKIdzqFcju3wz-EtL5FE/view)
-
-
+ [![Demo video](/ Screenshot URL )]( Video URL)
 
 
  ## License
  Project covered under the following license: 
  - ${data.license}<br>
   
- ## Contributors
- ${data.contributors}
+ ## Contributing
+ This app was developed by:
+ - ${data.contributors}
   
  ## Questions
    - Please send your questions to ${data.email}.

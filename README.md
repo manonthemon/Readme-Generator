@@ -15,10 +15,10 @@
 6. [Questions](#questions)
 
   ## Installation
-This is a simple commendline-based application. Requires node.js.
+This is a simple command line-based application. Requires node.js.
 
 ## Usage
- To run it type "node index" in the command line/terminal. You will be presented with a seties of question to help you complete your RREADME file. The app will also generate a list of content and attach a image linked to the demo of your project - replace the default link with the correct url linking to your projects demo. The ready Readme file can be edited to match specific requirements.
+ To run it type "node index" in the command line/terminal. You will be presented with a series of question to help you complete your README file. The app will also generate a list of contents and live links to the user's GitHub profile and email.
 
  ## Video
 
@@ -29,7 +29,8 @@ This is a simple commendline-based application. Requires node.js.
  - MIT<br>
   
  ## Contributors
- Maciej Klimowicz
+ This project was developed by:
+ - Maciej Klimowicz
   
  ## Questions
    - Please send your questions to klimowicz.maciej@gmail.com.
