@@ -1,6 +1,3 @@
-//TODO ADD A VIDEO
-
-
 //Packages
 
 const fs = require("fs");

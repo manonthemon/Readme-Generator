@@ -32,16 +32,24 @@ function generateMarkdown(data) {
   ## Table of contents
 1. [Installation](#installation)
 2. [Usage](#usage)
-3. [License](#license)
-4. [Contributors](#contributors)
-5. [Questions](#questions)
+3. [Video](#video)
+4. [License](#license)
+5. [Contributors](#contributors)
+6. [Questions](#questions)
 
   ## Installation
 ${data.installation}
 
 ## Usage
  ${data.usage}
-  
+
+ ## Video
+
+ [![Demo video](/utils/video.jpg)](https://drive.google.com/file/d/1fyYXS_mYDH-uuKIdzqFcju3wz-EtL5FE/view)
+
+
+
+
  ## License
  Project covered under the following license: 
  - ${data.license}<br>
@@ -51,7 +59,7 @@ ${data.installation}
   
  ## Questions
    - Please send your questions to ${data.email}.
-   - For more information visit https://github.com/${data.github} `
+   - For more information visit https://github.com/${data.github}. `
 }
 
 // Exports generateMarkdown to make it available in index.js file
